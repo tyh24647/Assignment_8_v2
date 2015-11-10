@@ -28,7 +28,7 @@ namespace Assignment_8_v2 {
             Console.Write("Greetings, overlord!\n\n> How many tasks must"
                 + " be given to these lowly peasants? ");
             var userMsg = Console.ReadLine();
-            var numPeasantTasks = parseUserMsg(userMsg);
+            var numPeasantTasks = ParseUserMsg(userMsg);
             
             for (var i = 0; i < numPeasantTasks; i++) {
                 var peasantTask = AssignTaskToPeasant();
@@ -44,7 +44,7 @@ namespace Assignment_8_v2 {
             await sqsClient.SendMessageAsync(sendMsgRequest);
         }
 
-        private int parseUserMsg(string userMsg) {
+        private int ParseUserMsg(string userMsg) {
             try {
                 return int.Parse(userMsg);
             } catch (Exception) {
