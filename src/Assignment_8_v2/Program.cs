@@ -39,7 +39,7 @@ namespace Assignment_8_v2 {
         private async Task AssignTaskToPeasant() {
             var sendMsgRequest = new SendMessageRequest();
             sendMsgRequest.QueueUrl = queueURL;
-            var msgData = retrievePeasantTask();
+            var msgData = RetrievePeasantTask();
             sendMsgRequest.MessageBody = JsonConvert.SerializeObject(msgData);
             await sqsClient.SendMessageAsync(sendMsgRequest);
         }
@@ -55,7 +55,7 @@ namespace Assignment_8_v2 {
             return -1;
         }
 
-        private JsonMessageData retrievePeasantTask() {
+        private JsonMessageData RetrievePeasantTask() {
             return new JsonMessageData() {
                 Type = peasantTask.Type,
                 Message = peasantTask.Message,
