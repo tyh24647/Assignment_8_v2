@@ -44,8 +44,11 @@ namespace Common.PeasantFunctions {
         }
 
         private string RandArrStr(string[] arr) {
-            if (arr == null) { return null; }
-            return arr[RandIntFromRange(0, arr.Length)];
+            if (arr != null) {
+                return arr[RandIntFromRange(0, arr.Length)];
+            }
+
+            return null;
         }
 
         private int RandIntFromRange(int min, int max) {
