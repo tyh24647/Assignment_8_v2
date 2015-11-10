@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0-*",
+    "description": "Workers Console Application",
+    "authors": [ "tyhos" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "AWSSDK": "2.3.52",
+        "Newtonsoft.Json": "7.0.1",
+        "Common": "1.0.0-*"
+    },
+
+    "commands": {
+        "Workers": "Workers"
+    },
+
+    "frameworks": {
+        "dnx451": { }
+    }
+}

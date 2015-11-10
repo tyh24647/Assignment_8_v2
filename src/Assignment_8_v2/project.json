@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0-*",
+    "description": "Assignment_8_v2 Console Application",
+    "authors": [ "tyhos" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "AWSSDK": "2.3.52",
+        "Common": "1.0.0-*",
+        "Workers": "1.0.0-*",
+        "Newtonsoft.Json": "7.0.1"
+    },
+
+    "commands": {
+        "Assignment_8_v2": "Assignment_8_v2"
+    },
+
+    "frameworks": {
+        "dnx451": { }
+    }
+}
